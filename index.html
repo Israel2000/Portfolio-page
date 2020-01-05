@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/animation.css">
     <title>Homepage Landing site</title>
 </head>
 <style>
@@ -24,74 +25,54 @@
         padding:0;
         overflow-x: hidden;
     }
+    .navbar-nav {
+      flex-direction: row;
+    }
+    
+    .nav-link {
+      padding-right: .5rem !important;
+      padding-left: .5rem !important;
+    }
+    
+    /* Fixes dropdown menus placed on the right side */
+    .ml-auto .dropdown-menu {
+      left: auto !important;
+      right: 0px;
+    }
+    
+
     .header-info {
         min-width: 100%;
         background: black;
         color: rgb(245, 245, 99);
         font-size: 30px;
         text-align: center;
-        height: 60px;
-        padding-top: 20px;
+        height: 40px;
+        padding-top: 10px;
     }
-    /* fix toggle for mobile */
-    .navbar-toggler {
-        width: 100px;
-    }
-   
-    h4 {
-        margin-top: -5px;
-        padding: 0 0 -90px 0;
-    }
-    .blockquote {
-        padding: 1.5em;
-        margin-top: 70px;
+    /* jambotron */
+    .jumbotron {
+    /* default fallback */
+    background: rgb(255, 251, 251) transparent;
+    /* nice browsers */
+    background: rgba(255, 255, 255, 0.8);
+    /* IE 6/7 */
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#CCFFFFFF, endColorstr=#CCFFFFFF);
+    /* IE8 */    
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#CCFFFFFF, endColorstr=#CCFFFFFF)";
+    margin: 80px;
     }
    
      /* social media */
-     .social_media {
+     /* .social_media {
          margin: 50px;
          text-align: center;
-     }
-    .fa {
-        padding: 10px;
-        font-size: 30px;
-        width: 50px;
-        text-align: center;
-        text-decoration: none;
-        margin: 5px 2px;
-        height: 50px;
-    }
-    .fa:hover {
-        opacity: 0.7;
-    }
-    .fa-facebook {
-        background: black;
-        color: white;
-    }
-    .fa-twitter {
-        background: black;
-        color: white;
-    }
-    .fa-google {
-        background: black;
-        color: white;
-    }
-    .fa-linkedin {
-        background: black;
-        color: white;
-    }
-    .fa-youtube {
-        background: black;
-        color: white;
-    }
-    .fa-youtube:hover, .fa-linkedin:hover, .fa-google:hover, .fa-twitter:hover, .fa-facebook:hover   {
-        background: white;
-        color: black;
-    }
+     } */
+    
   /* form -css */
-    form {
+    /* form {
         margin: 50px;
-    }
+    } */
     
     button {
         width: 100px;
@@ -110,37 +91,46 @@
      border: 2px solid black;
  }
 </style> 
-<body class="">
+<body>
     <div class="header-info">
         <h6>If you need a website please call (970)-716-0788 | email: aeluidev77@gmail.com</h6>
     </div>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand m-3" href="#">Israel Belete</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav" style="margin-left: 300px">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="about.html">About-Me</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="https://israel2000.github.io/promising-journey-sample/">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="pricing.html">Pricing</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-            </ul>
-        </div>
+    <nav class="navbar navbar-expand-lg text-dark">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">ABOUT</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">WORK</a>
+            </li>
+        </ul>
+                <a class="navbar-brand text-monospace" href="#">ISRAEL B.</a>
+
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#">LEARN</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false"> CONTACT</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a href="https://www.facebook.com/permalink.php?story_fbid=114667710047852&id=104197014428255" class="fa fa-facebook"></a>
+                    <a href="https://twitter.com/isieman" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-linkedin"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                    <a class="dropdown-item" href="#">Another action with a lot of text</a>
+                </div>
+            </li>
+        </ul>
     </nav>
-    <div class="row">
+    <div class="jumbotron text-center mt-2">
+        <h1 class="display-4">Hello, World!<br/> I'm Israel.</h1>
+        <p class="lead"> a Web Developer & Designer</p>
+        <hr class="my-4">
+        <a class="btn btn-primary btn-lg" href="#" role="button">Get In Touch</a>
+    </div>  
+    <!-- <div class="row">
         <div class="col-sm-8">
             <blockquote class="blockquote">
                 <h1 class="mb-0">For accountability and timely assignments, call xxxx to get your personal, business or commercial website development.</h1>
@@ -168,7 +158,8 @@
             </form>
             
         </div>
-    </div>
+    </div> -->
+    
         
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"

@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+}
+
+/* jambotron */
+.jumbotron {
+    /* default fallback */
+    background: rgb(255, 251, 251) transparent;
+    /* nice browsers */
+    background: rgba(255, 255, 255, 0.8);
+    /* IE 6/7 */
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#CCFFFFFF, endColorstr=#CCFFFFFF);
+    /* IE8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#CCFFFFFF, endColorstr=#CCFFFFFF)";
+    margin: 80px;
+    height: 400px;
+}
+
+/* social media */
+/* .social_media {
+         margin: 50px;
+         text-align: center;
+     } */
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    height: 50px;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-facebook {
+    background: black;
+    color: white;
+}
+.fa-twitter {
+    background: black;
+    color: white;
+}
+.fa-google {
+    background: black;
+    color: white;
+}
+.fa-linkedin {
+    background: black;
+    color: white;
+}
+.fa-youtube {
+    background: black;
+    color: white;
+}
+.fa-youtube:hover,
+.fa-linkedin:hover,
+.fa-google:hover,
+.fa-twitter:hover,
+.fa-facebook:hover {
+    background: white;
+    color: black;
+}
+
+
+.header-info {
+    min-width: 100%;
+    background: black;
+    color: rgb(245, 245, 99);
+    font-size: 30px;
+    text-align: center;
+    height: 40px;
+    padding-top: 10px;
+}
+/* fix toggle for mobile */
+.navbar-toggler {
+    width: 100px;
+}
+
+h4 {
+    margin-top: -5px;
+    padding: 0 0 -90px;
+}
+.blockquote {
+    padding: 1.5em;
+    margin-top: 70px;
+}
+
+/* social media */
+.social_media {
+    margin: 50px;
+    text-align: center;
+}
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    height: 50px;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-facebook {
+    background: black;
+    color: white;
+}
+.fa-twitter {
+    background: black;
+    color: white;
+}
+.fa-google {
+    background: black;
+    color: white;
+}
+.fa-linkedin {
+    background: black;
+    color: white;
+}
+.fa-youtube {
+    background: black;
+    color: white;
+}
+.fa-youtube:hover,
+.fa-linkedin:hover,
+.fa-google:hover,
+.fa-twitter:hover,
+.fa-facebook:hover {
+    background: white;
+    color: black;
+}
+/* form -css */
+form {
+    margin: 50px;
+}
+
+button {
+    width: 100px;
+    margin: 5px;
+}
+/* change color on submit button */
+.btn-dark {
+    background-color: rgb(116, 12, 116);
+    color: white;
+    border: 2px solid black;
+
+}
+.btn-dark:hover {
+    background-color: rgb(116, 12, 116);
+    color: yellow;
+    border: 2px solid black;
+}
